@@ -1,0 +1,80 @@
+{
+  "project": ".",
+  "run_root": "./runs/rsp_budget_sensitivity_20260921",
+  "created_utc": "2026-09-21T06:55:56.794038+00:00",
+  "budgets_new": [
+    64,
+    256
+  ],
+  "seeds": [
+    13,
+    23,
+    37
+  ],
+  "datasets": [
+    "afrimedqa",
+    "medexpqa",
+    "medexqa",
+    "pubmedqa",
+    "medmcqa"
+  ],
+  "methods": [
+    "rsp",
+    "random4b"
+  ],
+  "expected_new_branches": 60,
+  "K": 8,
+  "sigma": 0.02,
+  "layer": -1,
+  "epochs": 2,
+  "epsilon": 1e-08,
+  "selection_order": "pool_index",
+  "model_revision": "290cda5eeccbee130f987c4ad74a59ae6f196408",
+  "model_hashes": {
+    "model_cache/models--google--medgemma-4b-it/snapshots/290cda5eeccbee130f987c4ad74a59ae6f196408/added_tokens.json": "50b2f405ba56a26d4913fd772089992252d7f942123cc0a034d96424221ba946",
+    "model_cache/models--google--medgemma-4b-it/snapshots/290cda5eeccbee130f987c4ad74a59ae6f196408/chat_template.jinja": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4",
+    "model_cache/models--google--medgemma-4b-it/snapshots/290cda5eeccbee130f987c4ad74a59ae6f196408/config.json": "d718c800cdb5f40322010f57c6489944ab202b4622dc5f63e61b2a57d5df3b8e",
+    "model_cache/models--google--medgemma-4b-it/snapshots/290cda5eeccbee130f987c4ad74a59ae6f196408/generation_config.json": "3fd266fac5b39a46ddeb721536ed699ef10d8fac86301af7bc3eaef31f46c195",
+    "model_cache/models--google--medgemma-4b-it/snapshots/290cda5eeccbee130f987c4ad74a59ae6f196408/model-00001-of-00002.safetensors": "acd1c5fbeda43edbd93f164edc23844da1cb6136d0af5120c7ece561be8fbd01",
+    "model_cache/models--google--medgemma-4b-it/snapshots/290cda5eeccbee130f987c4ad74a59ae6f196408/model-00002-of-00002.safetensors": "1bed82e64597da81b1e663c59c4dae77df93edf8af95221054b541225d4f0313",
+    "model_cache/models--google--medgemma-4b-it/snapshots/290cda5eeccbee130f987c4ad74a59ae6f196408/model.safetensors.index.json": "77f4b67de084c31c7bcd373b039908108eee6c6181607e6d53da730e5f0bc659",
+    "model_cache/models--google--medgemma-4b-it/snapshots/290cda5eeccbee130f987c4ad74a59ae6f196408/special_tokens_map.json": "2f7b0adf4fb469770bb1490e3e35df87b1dc578246c5e7e6fc76ecf33213a397",
+    "model_cache/models--google--medgemma-4b-it/snapshots/290cda5eeccbee130f987c4ad74a59ae6f196408/tokenizer.json": "7d4046bf0505a327dd5a0abbb427ecd4fc82f99c2ceaa170bc61ecde12809b0c",
+    "model_cache/models--google--medgemma-4b-it/snapshots/290cda5eeccbee130f987c4ad74a59ae6f196408/tokenizer.model": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c",
+    "model_cache/models--google--medgemma-4b-it/snapshots/290cda5eeccbee130f987c4ad74a59ae6f196408/tokenizer_config.json": "31e860fdfa360fa5aa58fe93252799facde5a52d1352f77d45978ab2a7e9eeb1"
+  },
+  "input_hashes": {
+    "./data/additional_medical/afrimedqa/pool.jsonl": "962c72773b23943b0e46558a41d6af13c295eb0a4a0c9ba96b2e8e1a3a6ca59c",
+    "./data/additional_medical/afrimedqa/dev.jsonl": "e25e06d742822a8e65131e9b189531f9401bbffb9d1d654fc2709fbef73f4270",
+    "./data/additional_medical/afrimedqa/test.jsonl": "49d110977dac1e3e6cd99006a73083e167f47b693e1b0ad5302ebcd74742ed48",
+    "./data/additional_medical/medexpqa/pool.jsonl": "37121b0e3b6e32a255c2d98b49bcda943f5a8cc3e187c46122f47dd485fa1f66",
+    "./data/additional_medical/medexpqa/dev.jsonl": "a647bbd41080e09ace23029209c4bc1999135e83cbcd684b30a10c397154c5d7",
+    "./data/additional_medical/medexpqa/test.jsonl": "59b58112f355bd1d9e7a2ebd68217a9f12435471ae138a25984a70ed99d695f7",
+    "./data/additional_medical/medexqa/pool.jsonl": "2b60920a582cc3b515ac56f2764a302d549599203634c9a739c5158815ee6d22",
+    "./data/additional_medical/medexqa/dev.jsonl": "abf736be07d96bc767ef05bfe6259a351e5372bec330936e27add85805d6f1a1",
+    "./data/additional_medical/medexqa/test.jsonl": "8eb34872f7916c736307a09e03df861e2d4e757bf98a2d7c2e1ff7eb325ec2c7",
+    "./data/additional_medical/pubmedqa/pool.jsonl": "3628b2db4933c72026cf4882af5c3676071ee9cd03f3a561c1289d112330b4be",
+    "./data/additional_medical/pubmedqa/dev.jsonl": "51b55ceb77b2a05173baca2d56fd86fcbf086a64943cbee0c9c8915d8b9eef44",
+    "./data/additional_medical/pubmedqa/test.jsonl": "2440a22e4fc07bedf2ae7c8b01d6c5e4af4615b2a5581aee7505ce51f4d76912",
+    "./data/additional_medical/medmcqa/pool.jsonl": "b85d624d1f3beb48ad42dd8205386eba3c3c357ba4821ddf9ddd51065a12271f",
+    "./data/additional_medical/medmcqa/dev.jsonl": "be95757229f8252f2012c710f414367a92b886dd358dc513d0dd8e66a5aa5cdf",
+    "./data/additional_medical/medmcqa/test.jsonl": "94eac8d6d81d55395568a9df2ddefad2df04682705eef761d81408d043ecfed3"
+  },
+  "source_hashes": {
+    "./runs/rsp_budget_sensitivity_20260921/source/train_original_rsp_raw.py": "4932e49382d32529fb8a7a4c5e9c2400ca0b8fda4c2ce8cafbb2e03a5f904143",
+    "./runs/rsp_budget_sensitivity_20260921/source/original_rsp_raw_utils.py": "0338a955f9277ca6460bed0a63beec85b296d10facfd034650840bb0938be973",
+    "./runs/rsp_budget_sensitivity_20260921/source/common.py": "3f9ff788c001b148d35ad0dde3ec4629a17663c30336b3e91420e70cf5605841",
+    "./runs/rsp_budget_sensitivity_20260921/source/budget_sensitivity.py": "a401b069076c202500e1cfa738b993f1a197a35dbbeafb1f45de910d11c4a727"
+  },
+  "historical_model_provenance_limitation": "Historical acquisition metadata records model ID but not historical weight hashes; current cached revision is recorded, not asserted to prove historical weight identity.",
+  "missing_score_count": 2064,
+  "random_rule": "Use existing default_rng(seed) full-pool iid keys; highest B keys within entropy pool",
+  "supplement_rng_rule": "Replay original Gaussian tensor shapes without backbone inference for the cached prefix, then continue original RNG stream for missing entropy-ordered candidates.",
+  "alternative_full_pool_cache": "Not merged: different batch size and traversal assign different seeded draws.",
+  "canonical_B128_sources": [
+    "canonical_pool_order_rsp_pair_20260917/rms_lambda_rsp",
+    "canonical_pool_order_baselines_20260917/entropy_prefiltered_random"
+  ],
+  "manuscript_old_result_inconsistency": true,
+  "B128_training_resubmitted": false
+}

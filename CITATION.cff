@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite the ICHI preprint described in README.md; the prior GenAI4Health article has a separate identifier."
+title: "RSP and RSP-Drop for Medical QA Data Selection"
+type: software
+authors:
+  - family-names: Wu
+    given-names: Yuexin
+  - family-names: Yu
+    given-names: Dayou
+  - family-names: Rus
+    given-names: Vasile
+repository-code: "https://github.com/woqingdoua/rsp-medical-qa-selection-ichi"
+url: "https://github.com/woqingdoua/rsp-medical-qa-selection-ichi/blob/main/paper/ichi-preprint.pdf"

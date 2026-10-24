@@ -1,0 +1,41 @@
+# ICHI source and result provenance
+
+## Canonical manuscript
+
+The included manuscript is the identified ICHI preprint uploaded as new arXiv submission8275811. It reports primary-budget RSP Macro-F1 **47.55**, RSP-Drop **48.28**, and entropy-prefiltered Random **45.11**. The PDF SHA256 is `82ec3e135dbb17d7e1644988decd6fc01e370163311f808b725918a596b2185d`.
+
+It uses auxiliary explanations as input context and **answer-target loss only**. Later common-denominator weighted-CoT experiments are a different result family and are intentionally excluded. The separate GenAI4Health paper uses development-tuned coefficients and is not the canonical result family for this repository.
+
+## Retained run families
+
+| Release results | Historical run family | Scope |
+| --- | --- | --- |
+| `rsp_random_budget_per_seed.csv` | `rsp_budget_sensitivity_20260921` | 90 RSP/Random runs, five datasets, three budgets, three seeds |
+| `baselines_b128_per_seed.csv` | `canonical_pool_order_baselines_20260917` | 165 comparator runs, including pool-matched Random |
+| `drop_budget_per_seed.csv` | `preentropy_drop_only_k8_b64_128_256_20260922_repair` | 45 RSP-Drop runs; “repair” is a run identifier, not repaired rationale training |
+| `fullpool_drop_per_seed.csv` | `full_pool_drop_only_current_k8_b64_128_256_20260921` | Full-bank D ranking with the protocol-matched score cache |
+| `fullpool_rsp_per_seed.csv` | `full_pool_rsp_auto_entropy_ablation_20260922` | 27 trained active-ablation branches; full-bank RMS coefficients |
+
+B128 RSP and Random were reused only after matching canonical selected sets and input order. The RSP B128 rows in the budget CSV originate from `canonical_pool_order_rsp_pair_20260917`; that family's protocol is retained, but its earlier development-tuned comparison rows are excluded from this result bundle. Baseline reruns hold top128 membership fixed and restore ascending pool order before answer-only adaptation. The full-pool ablation excludes settings in which min(4B,N)=N when interpreting an entropy effect; separate training randomness under identical selections is not prefilter evidence.
+
+Unrounded per-run metrics were recovered from the retained server aggregation outputs, not copied from rounded paper cells. `analysis/summarize_results.py` checks coverage and the Random overlap between the two result tables, then computes means and sample SDs across the three seeds. Dataset-macro values weight datasets equally. It can reproduce aggregate statistics, but the absence of per-item arrays means this public bundle does not independently reevaluate predictions or verify UID alignment.
+
+## Historical and release source boundaries
+
+`provenance/source_manifest.json` records original and portable-copy SHA256 fingerprints. `provenance/*/protocol.json` retains the historical recorded protocol with machine-specific root paths made relative. Hash values themselves are unchanged; references to files excluded from this release are provenance records, not claims that those files are publicly available. The original private paths are not required in a public package.
+
+Three shared historical source hashes match the retained budget manifest:
+
+- `common.py`: `3f9ff788c001b148d35ad0dde3ec4629a17663c30336b3e91420e70cf5605841`
+- `original_rsp_raw_utils.py`: `0338a955f9277ca6460bed0a63beec85b296d10facfd034650840bb0938be973`
+- `train_original_rsp_raw.py`: `4932e49382d32529fb8a7a4c5e9c2400ca0b8fda4c2ce8cafbb2e03a5f904143`
+
+The historical B128 RMS derivation is retained in `archive/rms_balanced_lambda_k8_b128_20260917/relative_rsp_utils.py`; the original budget selection/stream-continuation code is in `archive/rsp_budget_sensitivity_20260921/budget_sensitivity.py`. Those historical positive-coefficient implementations directly evaluate F+lambda0D. The paper's zero-Flip boundary rule is explicit in the release `selection.py` and in the later frozen full-pool ablation. It is not asserted to have been present byte-for-byte in every earlier script. All45 reported entropy-prefiltered RSP coefficient records are positive, so this boundary maintenance does not change those reported selections.
+
+`selection.py` and `run_ichi.py` are new release interfaces, not previously executed scientific runs. They make the reported automatic-RMS rule and paper settings explicit without importing development-tuned selection code. Archive files preserve historical execution logic but require their original run trees and dependencies; copying an archive script to another directory does not recreate that run.
+
+Baseline scorer files and data preparation helpers are retained project implementations; an exact historical commit/hash was not recovered for every scorer. Their source-manifest fingerprints identify the retained copies, not a claim that all historical versions were pinned. The canonical training and aggregation snapshots were recovered directly from the recorded run directories. All machine-root edits are mechanical portability changes, not algorithm or result changes.
+
+## Excluded material
+
+No model weights, adapters, benchmark questions/explanations, per-item prediction arrays, UID lists, credentials, SSH settings, or private original git history are included. Only aggregate metrics and non-reversible set/file fingerprints accompany the code. This release performed no new acquisition, model inference, training or checkpoint evaluation. CPU arithmetic and synthetic unit tests are software verification, not new scientific experiments.

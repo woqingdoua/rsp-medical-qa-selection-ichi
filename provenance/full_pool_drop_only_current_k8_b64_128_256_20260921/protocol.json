@@ -1,0 +1,82 @@
+{
+  "backbone": "google/medgemma-4b-it",
+  "budget_source": "./runs/rsp_budget_sensitivity_20260921",
+  "budgets": [
+    64,
+    128,
+    256
+  ],
+  "candidate_rule": "complete pool; entropy only fixes the inherited Gaussian traversal, never eligibility or ranking",
+  "created_utc": "2026-09-22T00:36:46.132781+00:00",
+  "datasets": [
+    "afrimedqa",
+    "medexpqa",
+    "medexqa",
+    "pubmedqa",
+    "medmcqa"
+  ],
+  "expected_branches": 45,
+  "input_sha256": {
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/full_pool_supplement/afrimedqa/seed_13.npz": "4c8df1765514aa873511b9e0ba0f25fa98bf0de6b954bbe44f1ff5b2e1c779e6",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/full_pool_supplement/afrimedqa/seed_23.npz": "e157e7f4258c962c2b7cdfb03f14aec84cd89de5b639bc7eecf3c79e805915d3",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/full_pool_supplement/afrimedqa/seed_37.npz": "8bfdd996bf5f647504aef6ab3e078317eee3d8c240881c0bd68cc05b6598f4c8",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/scores/afrimedqa/seed_13/full_pool_drop_only_scores.jsonl": "82ead06f273877352efb128fdff780234968c801128322158ac4502f03019452",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/scores/afrimedqa/seed_23/full_pool_drop_only_scores.jsonl": "96e7b68e5acb565e357af52987f1165bd20129eb1aa84c01e17ec0aa855a4419",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/scores/afrimedqa/seed_37/full_pool_drop_only_scores.jsonl": "d75c367139a87bdb1e47eccc7291a4bcffd122b8506ed0238e664f06dd7dfb37",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/scores/medexpqa/seed_13/full_pool_drop_only_scores.jsonl": "90460a115fdd47126a66e59d23b7902fff59c6c28bcd10f1b665d18b5bc18a20",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/scores/medexpqa/seed_23/full_pool_drop_only_scores.jsonl": "03a6e1f898974f2578d2486603688e60efe5e52d06ce538228c273009554b6d5",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/scores/medexpqa/seed_37/full_pool_drop_only_scores.jsonl": "31fd6a5d31914e8430b75bd4e9674162410d266feab4aefd3bf76278e1ce5341",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/scores/medexqa/seed_13/full_pool_drop_only_scores.jsonl": "251ae55ec78c00816967f70a63fde180451093afca1acd119856c4bae458c83e",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/scores/medexqa/seed_23/full_pool_drop_only_scores.jsonl": "ed7f2070f9a0fe60f66205560330b7011eaca27281de9454a5e992f15b28eec3",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/scores/medexqa/seed_37/full_pool_drop_only_scores.jsonl": "a9c1e3f4fd2c6eda9c3285d1b31b17399740bcefadbea5480ec009d09a036907",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/scores/medmcqa/seed_13/full_pool_drop_only_scores.jsonl": "3e28827e27d6b4d8623645f98e70e214a821a8f866de26b43ef5dd94c14488db",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/scores/medmcqa/seed_23/full_pool_drop_only_scores.jsonl": "5ac4b5212fb83af7da050477cee638cd9e851d0dab3c4f50cd0fe113dad3fba9",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/scores/medmcqa/seed_37/full_pool_drop_only_scores.jsonl": "857617746800d46d4eb1a27f0d3c8264a3067ac5a373bb57a3f653fdee0bc7c3",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/scores/pubmedqa/seed_13/full_pool_drop_only_scores.jsonl": "e03055687525143b26432b57f94ef00844c76c7065e57daf4aed0b7da48e2c87",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/scores/pubmedqa/seed_23/full_pool_drop_only_scores.jsonl": "36341517360c69443371e8cbc415bc13a70198991032ebd9fb2f87f2adf1d6b8",
+    "./runs/full_pool_drop_only_current_k8_b64_128_256_20260921/scores/pubmedqa/seed_37/full_pool_drop_only_scores.jsonl": "864f2c5df421ef92ebd841d0120b13043332fbc1c3c9c5f7db3b822d8c289a8a",
+    "./runs/rsp_budget_sensitivity_20260921/supplement/afrimedqa/seed_13.npz": "d51a57698d108e8bd8dc6c7fdb1e4dc96200a23984eb06170ad5837a3890c812",
+    "./runs/rsp_budget_sensitivity_20260921/supplement/afrimedqa/seed_23.npz": "8074ffd2bc26dcd044e249c4b79db0aede8ef95c61ef2d4da5a75716637967bc",
+    "./runs/rsp_budget_sensitivity_20260921/supplement/afrimedqa/seed_37.npz": "52beaa68df4013f616683813b6981d795211d45cf11e9dc438e944bba93f75a2",
+    "./runs/rsp_budget_sensitivity_20260921/supplement/medexqa/seed_13.npz": "b8171193b1ef6bd4ae2208d134a68877efa9f17ebaf196a1dde4d22de378da2d",
+    "./runs/rsp_budget_sensitivity_20260921/supplement/medexqa/seed_23.npz": "0651489ede11c96ee4972b0c07640ac817e513bc6ac47cb835fa1fd9d58ce8c5",
+    "./runs/rsp_budget_sensitivity_20260921/supplement/medexqa/seed_37.npz": "b8171193b1ef6bd4ae2208d134a68877efa9f17ebaf196a1dde4d22de378da2d",
+    "./runs/rsp_budget_sensitivity_20260921/supplement/pubmedqa/seed_13.npz": "d1c9471d5e1a5e89a2377fcb343f66f5aa7552b6bda957bda231bc1e4a72e7c2",
+    "./runs/rsp_budget_sensitivity_20260921/supplement/pubmedqa/seed_23.npz": "7e7731905f7089611734bc2dd24476a47a39f98903cea48cd3e98209d45b0553",
+    "./runs/rsp_budget_sensitivity_20260921/supplement/pubmedqa/seed_37.npz": "7e7731905f7089611734bc2dd24476a47a39f98903cea48cd3e98209d45b0553"
+  },
+  "mc_passes": 8,
+  "method": "full_pool_drop_only_current",
+  "name": "Current canonical batch-4 full-pool Drop-only budget sensitivity",
+  "noise_layer": -1,
+  "noise_sigma": 0.02,
+  "score_column": "full_pool_drop_only_k8",
+  "score_definition": "raw non-Flip positive margin contraction D",
+  "score_diagnostics_sha256": "1131cb3bcf4348a20d62310b32c649ed250fb061186173db41e2414acb43f8ed",
+  "scoring_batch_size": 4,
+  "seeds": [
+    13,
+    23,
+    37
+  ],
+  "selection_audit_sha256": "eaf9a68c3f11e5d766ae8f4e69c9e570837ed52d32993bb24deadf3d728d2295",
+  "setup_manifest_sha256": "ea43ea0f1281d3fcceeb91b2665615bffc563f7580ce0c2d80704e8309e91718",
+  "source_snapshot_hashes": {
+    "aggregate_full_pool_drop_only_budgets.py": "9c2601fd0d21bcb09dbdbf3cea972b0f4ec58e6ff35e8d8dc49481d524285bb7",
+    "common.py": "3f9ff788c001b148d35ad0dde3ec4629a17663c30336b3e91420e70cf5605841",
+    "original_rsp_raw_utils.py": "0338a955f9277ca6460bed0a63beec85b296d10facfd034650840bb0938be973",
+    "prepare_current_full_pool_drop_only.py": "b4b50d306fd2fe3ad3df79e161d5e9a3902cb55e13dda7ff968c1a45808dc4b4",
+    "run_full_pool_drop_only_branch.py": "aefd255096a9da3e2abdb0f6f50cb686c22968579c7f57d47b4533d68938d668",
+    "submit_current_full_pool_drop_only.py": "f229ca8288180766b99fbaaf1584404e448871bc101d3fb3e1d2d8d034b6331b",
+    "train_original_rsp_raw.py": "4932e49382d32529fb8a7a4c5e9c2400ca0b8fda4c2ce8cafbb2e03a5f904143"
+  },
+  "training": {
+    "epochs": 2.0,
+    "learning_rate": 0.0001,
+    "lora_alpha": 32,
+    "lora_rank": 16,
+    "max_length": 1024
+  },
+  "training_manifest_sha256": "272267be2cc1759a6019219de6f2e2013287e34e2ed345ae3fd68fd43ef5ac44",
+  "training_order": "ascending original pool index"
+}

@@ -1,0 +1,11 @@
+# Functional dependencies, not a recovered historical lockfile.
+numpy
+torch
+transformers
+datasets
+peft
+accelerate
+scikit-learn
+safetensors
+sentencepiece
+protobuf

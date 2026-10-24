@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "primary_runs": 195,
+  "budget_runs": 135,
+  "active_entropy_ablation_runs": 54,
+  "new_experiments": 0,
+  "source": "retained unrounded per-run metrics; MedExpQA already filtered to121"
+}

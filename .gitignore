@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+model_cache/
+data/
+runs/
+*.npz
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+checkpoint*/
+.env
+.env.*

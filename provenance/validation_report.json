@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "release_date_local": "2026-10-23",
+  "canonical_manuscript": "Perturbation-Based Data Selection for Medical Question Answering",
+  "training_loss": "final-answer target tokens only",
+  "retained_files_hash_checked": 37,
+  "python_files_syntax_checked": 30,
+  "synthetic_unit_tests_passed": 12,
+  "primary_per_run_records": 195,
+  "budget_per_run_records": 135,
+  "active_entropy_ablation_per_run_records": 54,
+  "primary_dataset_macro_f1_percent": {
+    "rsp_auto": 47.55,
+    "rsp_drop": 48.28,
+    "random4b": 45.11
+  },
+  "verification_commands": [
+    "python -m unittest discover -s tests -v",
+    "python analysis/summarize_results.py --write",
+    "python analysis/verify_release.py"
+  ],
+  "paper_pdf_sha256": "82ec3e135dbb17d7e1644988decd6fc01e370163311f808b725918a596b2185d",
+  "new_model_calls": 0,
+  "new_training_runs": 0,
+  "new_checkpoint_evaluations": 0,
+  "not_verified": [
+    "GPU rerun of the release convenience launcher",
+    "Bitwise historical replication with unpinned model/environment",
+    "Per-item prediction alignment from aggregate-only public bundle"
+  ],
+  "arxiv": {
+    "new_submission_id": "8275811",
+    "status_at_release_check": "processing",
+    "public_identifier": null,
+    "genai4health_prior_identifier": "2609.09684v2",
+    "prior_article_modified": false
+  }
+}
