@@ -217,8 +217,9 @@
   },
   {
     "release_path": "paper/ichi-preprint.pdf",
-    "original_sha256": "82ec3e135dbb17d7e1644988decd6fc01e370163311f808b725918a596b2185d",
-    "release_sha256": "82ec3e135dbb17d7e1644988decd6fc01e370163311f808b725918a596b2185d",
-    "portable_paths_changed": false
+    "original_sha256": "f3eec0e0c70f2a953368f2ab395837a21cb04ab19bfa423ab9346c41c9a75d9f",
+    "release_sha256": "f3eec0e0c70f2a953368f2ab395837a21cb04ab19bfa423ab9346c41c9a75d9f",
+    "portable_paths_changed": false,
+    "source_revision": "arXiv submission 8275811: GitHub-link update, compiled 2026-10-24 UTC"
   }
 ]

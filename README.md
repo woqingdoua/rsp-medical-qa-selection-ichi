@@ -4,7 +4,7 @@ Research code for **Perturbation-Based Data Selection for Medical Question Answe
 
 **[Read the ICHI preprint PDF](paper/ichi-preprint.pdf)** · [Method and reproduction](docs/REPRODUCIBILITY.md) · [Source and result provenance](docs/PROVENANCE.md) · [Paper configuration](configs/ichi.json)
 
-The ICHI preprint was submitted to arXiv as a **new submission** (8275811), separately from the GenAI4Health article. At this release's status check, it was processing and had no public arXiv identifier. The PDF above is the actual arXiv-compiled ICHI manuscript. Its public abstract link can be added after announcement; the GenAI4Health link below is **not** the ICHI paper link.
+The ICHI preprint was submitted to arXiv as a **new submission** (8275811), separately from the GenAI4Health article. The PDF above is the actual arXiv-compiled manuscript, updated to include this code repository link. The update was resubmitted successfully; its status at the update check was **on hold** (moderation checks), without a public arXiv identifier. Its public abstract link can be added after announcement; the GenAI4Health link below is **not** the ICHI paper link.
 
 ## Relationship to the GenAI4Health study
 

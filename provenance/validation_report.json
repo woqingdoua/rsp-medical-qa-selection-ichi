@@ -19,7 +19,8 @@
     "python analysis/summarize_results.py --write",
     "python analysis/verify_release.py"
   ],
-  "paper_pdf_sha256": "82ec3e135dbb17d7e1644988decd6fc01e370163311f808b725918a596b2185d",
+  "paper_pdf_sha256": "f3eec0e0c70f2a953368f2ab395837a21cb04ab19bfa423ab9346c41c9a75d9f",
+  "paper_update": "GitHub-link footnote only; scientific content unchanged; arXiv-generated PDF, 10 pages, visually inspected",
   "new_model_calls": 0,
   "new_training_runs": 0,
   "new_checkpoint_evaluations": 0,
@@ -31,6 +32,8 @@
   "arxiv": {
     "new_submission_id": "8275811",
     "status_at_release_check": "processing",
+    "status_at_github_link_update": "on_hold",
+    "github_link_update_resubmitted": true,
     "public_identifier": null,
     "genai4health_prior_identifier": "2609.09684v2",
     "prior_article_modified": false

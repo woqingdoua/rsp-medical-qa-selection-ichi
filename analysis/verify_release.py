@@ -21,7 +21,7 @@ def main():
     assert originals["src/train_original_rsp_raw.py"] == "4932e49382d32529fb8a7a4c5e9c2400ca0b8fda4c2ce8cafbb2e03a5f904143"
     assert originals["src/common.py"] == "3f9ff788c001b148d35ad0dde3ec4629a17663c30336b3e91420e70cf5605841"
     assert originals["src/original_rsp_raw_utils.py"] == "0338a955f9277ca6460bed0a63beec85b296d10facfd034650840bb0938be973"
-    assert hashlib.sha256((ROOT / "paper/ichi-preprint.pdf").read_bytes()).hexdigest() == "82ec3e135dbb17d7e1644988decd6fc01e370163311f808b725918a596b2185d"
+    assert hashlib.sha256((ROOT / "paper/ichi-preprint.pdf").read_bytes()).hexdigest() == "f3eec0e0c70f2a953368f2ab395837a21cb04ab19bfa423ab9346c41c9a75d9f"
     patterns = re.compile(r"(?:gh[pousr]_[A-Za-z0-9]{25,}|github_pat_[A-Za-z0-9_]{25,}|hf_[A-Za-z0-9]{25,}|sk-(?:proj-)?[A-Za-z0-9_-]{25,}|-----BEGIN (?:OPENSSH |RSA |EC |DSA |ENCRYPTED )?PRIVATE KEY-----)")
     python_count = 0
     for path in ROOT.rglob("*"):
